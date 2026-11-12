@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zorin SMP | Classic Minecraft Survival Server</title>
+  <meta name="description" content="Zorin SMP is a cozy vanilla-plus Minecraft survival server. Join at zorin.pxlmc.com on Java 1.12+.">
+  <meta name="theme-color" content="#0b0f19">
+  <link rel="icon" type="image/webp" href="https://media.discordapp.net/attachments/1559153088604934165/1570496838874701946/zorin-os.png?ex=6af74ea8&amp;is=6af5fd28&amp;hm=de97b196e872a3b7f5f8a0850241a650b9e26fad247eac5746e067e38ba124d7&amp;=&amp;format=webp&amp;quality=lossless&amp;width=384&amp;height=384">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#about" class="logo" aria-label="Zorin SMP home">
+        <img id="logoImg" class="logo-img" width="36" height="36" alt="" src="https://media.discordapp.net/attachments/1559153088604934165/1570496838874701946/zorin-os.png?ex=6af74ea8&amp;is=6af5fd28&amp;hm=de97b196e872a3b7f5f8a0850241a650b9e26fad247eac5746e067e38ba124d7&amp;=&amp;format=webp&amp;quality=lossless&amp;width=384&amp;height=384">
+        <span>Zorin SMP</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#world">World</a>
+        <a href="#rules">Rules</a>
+        <a href="#join" class="nav-cta">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="orb orb-3"></span></div>
+      <div class="container hero-inner">
+        <div class="hero-badges">
+          <span class="badge badge-mono">Java 1.12+</span>
+          <div class="status" id="serverStatus" data-state="loading" role="status" aria-live="polite">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="status-label" id="statusText">Checking...</span>
+            <span class="status-players" id="statusPlayers">
+              <span class="status-sep" aria-hidden="true"></span>
+              <span class="players-count" id="playersCount">0 / 0</span>
+              <span class="players-unit">players</span>
+            </span>
+          </div>
+        </div>
+        <h1>Settle in, build something that lasts.</h1>
+        <p class="hero-text">
+          Zorin SMP is a pure, vanilla-plus survival world run by players who like
+          a quiet, friendly server. Gather resources, claim your land, trade with neighbors,
+          and grow your base at your own pace.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="copyIpBtn" type="button" data-ip="zorin.pxlmc.com">
+            <span class="btn-label">Copy Server IP</span>
+            <span class="btn-ip">zorin.pxlmc.com</span>
+          </button>
+          <a href="#features" class="btn btn-ghost">See what's here</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">Survival, the way it should feel</h2>
+        <p class="section-sub">Familiar gameplay with a few quality-of-life touches that keep your builds safe.</p>
+        <div class="card-grid">
+          <article class="card glass">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg>
+            </div>
+            <h3>Pure Survival Experience</h3>
+            <p>Vanilla-friendly gameplay with minimal lag, so mining, farming and exploring stay smooth.</p>
+          </article>
+          <article class="card glass">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Land Claiming</h3>
+            <p>Protect your builds and chests with easy grief protection. Claim a plot and build in peace.</p>
+          </article>
+          <article class="card glass">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9z"/><path d="M2 9h20M9 3l3 18 3-18"/></svg>
+            </div>
+            <h3>Player Economy</h3>
+            <p>Trade with diamonds or set up player-run chest shops at spawn.</p>
+          </article>
+          <article class="card glass">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg>
+            </div>
+            <h3>Community Events</h3>
+            <p>Join weekly build contests and team up for dragon fights.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="world">
+      <div class="container">
+        <h2 class="section-title">Explore our world</h2>
+        <p class="section-sub">A few places you'll see on your first day, and the ones you'll build next.</p>
+        <div class="gallery">
+          <figure class="shot glass shot-spawn">
+            <div class="shot-media" role="img" aria-label="Spawn area at sunrise"></div>
+            <figcaption><h3>Spawn</h3><p>Shops, warps and a quiet start for every new player.</p></figcaption>
+          </figure>
+          <figure class="shot glass shot-builds">
+            <div class="shot-media" role="img" aria-label="Player-built survival bases at sunset"></div>
+            <figcaption><h3>Survival builds</h3><p>Farms, castles and villages grown one block at a time.</p></figcaption>
+          </figure>
+          <figure class="shot glass shot-events">
+            <div class="shot-media" role="img" aria-label="Community event arena at night"></div>
+            <figcaption><h3>Community events</h3><p>Weekly build contests and dragon fights with the whole server.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container join-rules">
+        <div class="panel glass" id="join">
+          <h2>How to join</h2>
+          <ol class="steps">
+            <li>
+              <strong>Open Minecraft Java Edition</strong>
+              <span>Launch version 1.12 or newer.</span>
+            </li>
+            <li>
+              <strong>Add the server</strong>
+              <span>Go to Multiplayer, then choose Add Server.</span>
+            </li>
+            <li>
+              <strong>Enter the address and play</strong>
+              <span>Type <code>zorin.pxlmc.com</code>, save, and join.</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="panel glass" id="rules">
+          <h2>Server rules</h2>
+          <ul class="rules">
+            <li><strong>No griefing</strong><span>Leave other players' builds as you found them.</span></li>
+            <li><strong>No stealing</strong><span>If it isn't yours, don't take it, claimed or not.</span></li>
+            <li><strong>No cheating or X-ray</strong><span>Hacked clients and X-ray packs are not allowed.</span></li>
+            <li><strong>Be respectful</strong><span>Treat everyone kindly in chat and in game.</span></li>
+            <li><strong>No lag machines</strong><span>Keep farms and redstone friendly to the server.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="community">
+      <div class="container">
+        <div class="banner banner-discord glass">
+          <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-discord" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.6 0L8.6 3a19.7 19.7 0 0 0-4.9 1.4C.6 9-.2 13.5.2 18a19.9 19.9 0 0 0 6 3l1.3-2.1c-.7-.3-1.4-.6-2-1l.5-.4a14.2 14.2 0 0 0 12 0l.5.4c-.6.4-1.3.7-2 1l1.3 2.1a19.8 19.8 0 0 0 6-3c.5-5.2-.8-9.7-3.5-13.6ZM8 15.2c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm8 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></symbol></svg>
+          <svg class="banner-icon" aria-hidden="true"><use href="#i-discord"/></svg>
+          <div class="banner-copy">
+            <h2>Come hang out with the community</h2>
+            <p>Find build partners, hear about events, and get help from the team on Discord.</p>
+          </div>
+          <a class="btn btn-discord" href="https://discord.gg/QZMs9HduZ3" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>Zorin SMP</strong>
+        <p>A quiet, friendly survival server. Java 1.12+ at <code>zorin.pxlmc.com</code></p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#world">World</a>
+        <a href="#join">How to join</a>
+        <a href="#rules">Rules</a>
+      </nav>
+      <a class="social" href="https://discord.gg/QZMs9HduZ3" target="_blank" rel="noopener noreferrer" aria-label="Zorin SMP on Discord">
+        <svg aria-hidden="true"><use href="#i-discord"/></svg>
+        <span>Discord</span>
+      </a>
+    </div>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Zorin SMP. All rights reserved.</p>
+      <p class="footer-note">Not an official Minecraft service. Not affiliated with Mojang or Microsoft.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
